@@ -25,6 +25,15 @@
                 $('.accordeon-content').slideUp();
             }
         })
+
+        $('.menu-toggle').on('click', function(){
+
+            $('body').toggleClass('menu-opened');
+        })
+
+        var gallerySettings = {}
+
+        $('.carousel-gallery').slick(gallerySettings)
     })
 
 })(jQuery);

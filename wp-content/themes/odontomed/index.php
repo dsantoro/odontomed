@@ -2,7 +2,7 @@
     get_header();
 ?>
 
-<section class="submenu">
+<section class="submenu show-for-large">
 
     <div class="row">
 
@@ -108,7 +108,7 @@
 
                     <div class="row flex">
 
-                        <div class="small-12 medium-9 columns">
+                        <div class="small-12 medium-12 large-9 columns">
 
                             <h3 class="title medium-title text-right">Tenha a sua Odontomed</h3>
                             <p class="text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut iaculis nibh, quis aliquet arcu. Nulla eu mauris et nisl varius placerat. Fusce a ipsum orci. Pellentesque vitae diam malesuada, sollicitudin metus sed, iaculis sem.</p>

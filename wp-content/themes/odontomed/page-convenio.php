@@ -16,7 +16,7 @@
 
                 <div class="small-12 medium-11 medium-centered columns">
 
-                    <div class="row flex align-center">
+                    <div class="row flex align-center mobile-column">
 
                         <div class="small-12 medium-6 columns">
 
@@ -30,7 +30,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac urna eu nisl faucibus ultricies in vel nulla.</p>
                         </div>
 
-                        <div class="small-12 medium-6 columns">
+                        <div class="show-for-large large-6 columns">
 
                             <div class="cards">
 

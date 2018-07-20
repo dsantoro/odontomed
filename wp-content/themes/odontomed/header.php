@@ -10,51 +10,67 @@
 </head>
 <body <?php body_class(); ?>>
 
-<div class="content">
+    <div class="content">
 
-    <header class="site-header">
+        <header class="site-header">
 
-        <div class="row flex">
+            <div class="offset-menu hide-for-large">
 
-            <div class="small-12 medium-10 large-3 columns">
+                <a href="javascript:void(0);" class="menu-close menu-toggle hide-for-large"><i class="fa fa-times" aria-hidden="true"></i></a>
 
-                <a href="<?php echo home_url(); ?>" class="logo" title="<?php bloginfo('name'); ?>">
+                <?php
 
-                    <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/logo.png"/>
-                </a>
+                    $args = array(
+                        'theme_location' => 'primary'
+                    );
+                ?>
+
+                <?php wp_nav_menu( $args ); ?>
             </div>
 
-            <div class="large-9 show-for-large columns">
+            <div class="row flex">
 
-                <nav class="site-navigation">
+                <div class="small-12 medium-10 large-3 text-center columns">
 
-                    <?php
+                    <a href="javascript:void(0);" class="menu-mobile menu-toggle hide-for-large"><i class="fa fa-bars" aria-hidden="true"></i></a>
 
-                        $args = array(
-                            'theme_location' => 'primary'
-                        );
-                    ?>
+                    <a href="<?php echo home_url(); ?>" class="logo" title="<?php bloginfo('name'); ?>">
 
-                    <?php wp_nav_menu( $args ); ?>
-                </nav>
+                        <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/logo.png"/>
+                    </a>
+                </div>
+
+                <div class="large-9 show-for-large columns">
+
+                    <nav class="site-navigation">
+
+                        <?php
+
+                            $args = array(
+                                'theme_location' => 'primary'
+                            );
+                        ?>
+
+                        <?php wp_nav_menu( $args ); ?>
+                    </nav>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <section class="banner" role="banner">
+        <section class="banner" role="banner">
 
-        <div class="carousel">
+            <div class="carousel">
 
-            <div>
+                <div>
 
-                <div class="each-banner" style="background-image: url(<?php echo get_bloginfo('template_url') ?>/assets/images/banner-1.jpg)"></div>
+                    <div class="each-banner" style="background-image: url(<?php echo get_bloginfo('template_url') ?>/assets/images/banner-1.jpg)"></div>
+                </div>
+
+                <div>
+
+                    <div class="each-banner" style="background-image: url(<?php echo get_bloginfo('template_url') ?>/assets/images/banner-1.jpg)"></div>
+                </div>
             </div>
 
-            <div>
-
-                <div class="each-banner" style="background-image: url(<?php echo get_bloginfo('template_url') ?>/assets/images/banner-1.jpg)"></div>
-            </div>
-        </div>
-
-        <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/banner-mask.png" alt="" class="banner-mask">
-    </section>
+            <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/banner-mask.png" alt="" class="banner-mask">
+        </section>
